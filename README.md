@@ -19,4 +19,5 @@ This project is an AI that reads movie reviews and decides if they are positive 
 - [x] Learn Punctuation Removal
 - [x] Connect project to GitHub
 - [x] Learn For-Loops, If-Statements, and Stop Words
-- [ ] Learn Python Dictionaries and Mapping
+- [x] Learn Python Dictionaries and Mapping
+- [ ] Milestone 1: Build a Basic Rule-Based Sentiment Analyzer

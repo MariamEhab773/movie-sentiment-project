@@ -1,22 +1,18 @@
-# 1. Our original review with punctuation
-review = "I absolutely loved this movie, the acting was great!"
+# 1. We create a DICTIONARY using curly braces { }
+# Key = The Word, Value = A sentiment score we make up!
+# Positive words get a 1, negative get a -1, neutral get a 0.
+word_scores = {
+    "loved": 1,
+    "great": 1,
+    "terrible": -1,
+    "movie": 0
+}
 
-clean_review = review.lower()
+# 2. Let's look up the score for a specific word. 
+# We type the dictionary name, and put the Key in square brackets.
+loved_score = word_scores["loved"]
+terrible_score = word_scores["terrible"]
 
-clean_review = clean_review.replace(",","").replace("!","")
-
-tokens = clean_review.split()
-
-print("Cleaned Tokens: ", tokens)
-
-stop_words = ['i', 'this', 'the', 'was']
-
-important_words = []
-
-for word in tokens:
-    
-    if word not in stop_words:
-        important_words.append(word)
-        
-print("Original Tokens: ", tokens)
-print("Important Words Only: ", important_words)
+# 3. Print the results to the terminal
+print("The score for 'loved' is:", loved_score)
+print("The score for 'terrible' is:", terrible_score)
