@@ -21,3 +21,11 @@
 
 ## Data Structures
 - **Dictionaries:** Store data in Key-Value pairs using `{ }`. We use them to map words to numerical sentiment scores (e.g., `"loved": 1`). AI needs numbers, not words!
+
+## AI Systems
+- **Rule-Based System:** An early form of AI where humans manually write the rules (like a dictionary of positive/negative words).
+
+## Data Handling (Pandas)
+- **Pandas:** A powerful Python library for handling data.
+- **Importing:** We use `import pandas as pd` to bring the library into our script.
+- **DataFrame (`df`):** The core of Pandas. It is basically an Excel spreadsheet inside Python, organizing data into rows and columns.
