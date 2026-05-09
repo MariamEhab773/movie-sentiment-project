@@ -22,5 +22,6 @@ This project is an AI that reads movie reviews and decides if they are positive 
 - [x] Milestone 1: Build a Basic Rule-Based Sentiment Analyzer
 - [x] Learn why Rule-Based systems fail (The need for Deep Learning)
 - [x] Install Pandas and work with real datasets
-- [ ] Load a real CSV Movie Review dataset
-- [ ] Learn Pandas Head and Tail commands
+- [x] Load a real CSV Movie Review dataset
+- [x] Learn Pandas Head and Shape commands
+- [ ] Scale up Preprocessing: Clean an entire dataset at once

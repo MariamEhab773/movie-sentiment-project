@@ -29,3 +29,6 @@
 - **Pandas:** A powerful Python library for handling data.
 - **Importing:** We use `import pandas as pd` to bring the library into our script.
 - **DataFrame (`df`):** The core of Pandas. It is basically an Excel spreadsheet inside Python, organizing data into rows and columns.
+- **Loading Data:** `pd.read_csv("filename.csv")` loads a CSV file into a DataFrame.
+- **Viewing Data:** `.head()` prints only the first 5 rows (great for huge datasets).
+- **Dataset Size:** `.shape` outputs the number of (rows, columns).

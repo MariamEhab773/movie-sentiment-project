@@ -1,13 +1,19 @@
 import pandas as pd
 
-# 1. We use pd.read_csv() to load our external file into a DataFrame
+# 1. Load the dataset
 df = pd.read_csv("movie_reviews.csv")
 
-# 2. When dealing with thousands of rows, we don't want to print them all!
-# The .head() command tells Pandas to only print the first 5 rows so we can take a peek.
-print("--- Peeking at our Dataset ---")
-print(df.head())
+# 2. We are going to create a BRAND NEW column in our spreadsheet called "clean_review".
+# We do this by taking the original "review" column, and applying .str.lower() to all rows at once!
+df["clean_review"] = df["review"].str.lower()
 
-# 3. We can also ask Pandas how many rows and columns are in the file using .shape
-print("\n--- Dataset Size ---")
-print("Rows and Columns:", df.shape)
+# 3. Now let's remove the punctuation from our new column.
+# We add regex=False just to tell Pandas we are doing a simple, basic text replacement.
+df["clean_review"] = df["clean_review"].str.replace(",","")
+df["clean_review"] = df["clean_review"].str.replace("!","")
+df["clean_review"] = df["clean_review"].str.replace(".","")
+
+# 4. Let's look at our spreadsheet now! 
+# We ask Pandas to show us just the original review and the clean review columns.
+print("--- After Preprocessing ---")
+print(df[["review", "clean_review"]].head())
