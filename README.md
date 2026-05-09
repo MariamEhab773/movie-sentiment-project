@@ -24,4 +24,7 @@ This project is an AI that reads movie reviews and decides if they are positive 
 - [x] Install Pandas and work with real datasets
 - [x] Load a real CSV Movie Review dataset
 - [x] Learn Pandas Head and Shape commands
-- [ ] Scale up Preprocessing: Clean an entire dataset at once
+- [x] Scale up Preprocessing: Clean an entire dataset at once
+- [x] Install TensorFlow/Keras
+- [ ] Learn about AI Vocabulary (Words to Numbers)
+- [ ] Build a Text Vectorizer

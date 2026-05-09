@@ -32,3 +32,8 @@
 - **Loading Data:** `pd.read_csv("filename.csv")` loads a CSV file into a DataFrame.
 - **Viewing Data:** `.head()` prints only the first 5 rows (great for huge datasets).
 - **Dataset Size:** `.shape` outputs the number of (rows, columns).
+- **Vectorization:** Doing an action to an entire Pandas column at once without using a For-Loop. 
+- **String Cleaning in Pandas:** We use `.str` to access text tools. Example: `df["column"].str.lower()` makes the whole column lowercase.
+
+## Deep Learning Tools
+- **TensorFlow & Keras:** The heavy-duty libraries we use to build Neural Networks. Keras makes TensorFlow easier to use by letting us build AI like Lego blocks.
