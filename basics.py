@@ -1,18 +1,13 @@
-# 1. We must 'import' pandas to tell Python we want to use the tool we just downloaded.
-# We call it 'pd' for short so we don't have to type 'pandas' every time.
 import pandas as pd
 
-# 2. Let's create some fake movie review data. 
-# Notice how we use a Dictionary, but this time the Values are Lists!
-fake_data = {
-    "Review": ["I loved this movie!", "It was terrible.", "Great acting!"],
-    "Sentiment": ["Positive", "Negative", "Positive"]
-}
+# 1. We use pd.read_csv() to load our external file into a DataFrame
+df = pd.read_csv("movie_reviews.csv")
 
-# 3. We use Pandas (pd) to convert our dictionary into a DataFrame (spreadsheet)
-# We usually name our DataFrame 'df' for short.
-df = pd.DataFrame(fake_data)
+# 2. When dealing with thousands of rows, we don't want to print them all!
+# The .head() command tells Pandas to only print the first 5 rows so we can take a peek.
+print("--- Peeking at our Dataset ---")
+print(df.head())
 
-# 4. Print the spreadsheet to the terminal
-print("--- My First Pandas Spreadsheet ---")
-print(df)
+# 3. We can also ask Pandas how many rows and columns are in the file using .shape
+print("\n--- Dataset Size ---")
+print("Rows and Columns:", df.shape)
