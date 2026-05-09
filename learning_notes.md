@@ -1,0 +1,15 @@
+# My NLP Learning Notes
+
+## Python Basics
+- **Variables:** Like labeled cardboard boxes for storing data. Example: `review = "Great movie!"`
+- **Comments:** Lines starting with `#` are ignored by the computer. They are notes for humans.
+- **Print:** The `print()` command shows data on the screen.
+
+## Data Structures & Preprocessing
+- **Lists:** Used to store multiple items in one variable using square brackets `[ ]`. Computers count starting at 0. (Example: `reviews[0]`)
+- **Lowercasing:** We use `.lower()` to make all text lowercase. This is vital in NLP so the AI doesn't think "Great" and "great" are two entirely different words.
+
+- **Tokenization:** Breaking a sentence into individual words (tokens) using `.split()`. 
+- **Length:** We use `len()` to count how many items are in a List.
+
+- **Punctuation Removal:** We use `.replace("old", "new")` to swap characters. We replaced punctuation with nothing `""` to remove it.
