@@ -13,3 +13,8 @@
 - **Length:** We use `len()` to count how many items are in a List.
 
 - **Punctuation Removal:** We use `.replace("old", "new")` to swap characters. We replaced punctuation with nothing `""` to remove it.
+
+## Logic & Loops
+- **For-Loops:** Like a conveyor belt. It goes through a list one item at a time (`for word in list:`).
+- **If-Statements:** Like a bouncer. It checks a rule before letting the code continue (`if word not in stop_words:`).
+- **Stop Words:** Common filler words (like "the", "is", "a") that we remove because they don't help the AI understand the meaning of the text.

@@ -17,4 +17,6 @@ This project is an AI that reads movie reviews and decides if they are positive 
 - [x] Learn Python Lists and basic NLP Preprocessing
 - [x] Learn Tokenization (breaking sentences into words)
 - [x] Learn Punctuation Removal
-- [ ] Learn For-Loops, If-Statements, and Stop Words
+- [x] Connect project to GitHub
+- [x] Learn For-Loops, If-Statements, and Stop Words
+- [ ] Learn Python Dictionaries and Mapping
